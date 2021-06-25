@@ -12,10 +12,8 @@
 n = int(input())
 
 #여기에 문제를 해결하는 코드를 입력하세요
-s = 0
-for i in range(1, n+1) :
-    if i % 2 == 0 :
-        s += i
+
+
 
 #결과 출력
 print(s)
