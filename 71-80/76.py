@@ -27,9 +27,3 @@ absolutes = [10,20,30,40,30,20,10]
 signs = ['+', '-', '+', '+', '-', '+', '-']
 
 #여기에 문제를 해결하는 코드를 입력하세요
-
-for i in range(len(signs)) :
-    if signs[i] == '-' :
-        absolutes[i] *= -1
-
-print(sum(absolutes))
