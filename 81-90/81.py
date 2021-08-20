@@ -10,3 +10,13 @@ for i in range(2, 1000001) :
     numbers.append(i)
 
 #여기에 문제를 해결할 코드를 짜 주세요
+count= 0
+for i in range(2, 1000001) :
+    if(numbers[i] != 0) :
+        count += 1
+        idx = i
+        numbers[i] = 0
+        while idx <= 1000000 :
+            numbers[idx] = 0
+            idx += i
+print(count)
