@@ -35,3 +35,26 @@ def isPalindrome(a) : #수 a가 대칭수인지 확인하는 함수.
     return check
 
 #여기에 문제를 해결하는 코드를 입력하세요
+count = 0
+
+for i in range(1, 10001) :
+    num = str(i)
+
+    check = True
+
+    for i in range(49) :
+        reversedNum = num[::-1]
+
+        num = int(num) + int(reversedNum)
+
+        if isPalindrome(num) :
+            check = False
+            break
+    
+    if check :
+        count += 1
+
+print(count)
+
+
+    
