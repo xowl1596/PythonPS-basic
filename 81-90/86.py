@@ -15,16 +15,3 @@ m = int(input())
 ls = ['d','r','u']
 
 #여기에 문제를 해결하는 코드를 입력하세요
-pos = [0, 0]
-
-for i in ls :
-    if i == 'u' and pos[0] != 0:
-        pos[0] -= 1
-    elif i == 'd' and pos[0] != m-1 :
-        pos[0] += 1
-    elif i == 'l' and pos[1] != 0 :
-        pos[1] -= 1
-    elif i == 'r' and pos[1] != n-1:
-        pos[1] += 1
-
-print(pos[0], pos[1])
