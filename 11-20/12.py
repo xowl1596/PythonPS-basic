@@ -6,14 +6,3 @@
 #10000 이하의 자연수에서 하샤드 수는 총 몇 개인가요?
 
 #여기에 문제를 해결하는 코드를 입력해 줍니다.
-
-count = 0
-for i in range(10, 10001) :
-    s = str(i) 
-    sum_1 = 0
-    for j in range(len(s)) : 
-        sum_1 += int(s[j])
-    
-    if i % sum_1 == 0 :
-        count += 1
-print(count)
