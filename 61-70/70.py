@@ -15,14 +15,3 @@ b = int(input())
 c = int(input())
 
 #여기에 문제를 해결하는 코드를 입력하세요
-result = "직각삼각형 아님"
-
-if b**2 + c**2 == a**2 :
-    result = "직각삼각형 맞음"
-if a**2 + c**2 == b**2 :
-    result = "직각삼각형 맞음"
-if a**2 + b**2 == c**2 :
-    result = "직각삼각형 맞음"
-    
-#결과 출력
-print(result)
